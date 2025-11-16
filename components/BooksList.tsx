@@ -32,9 +32,6 @@ export default function BooksList() {
                 ? book.authors[0].name
                 : "Autor desconocido"}
             </p>
-            <p className="text-sm text-gray-500 mt-2">
-              ID: {book.id} | Descargas: {book.download_count.toLocaleString()}
-            </p>
           </div>
         ))}
       </div>

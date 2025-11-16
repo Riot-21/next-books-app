@@ -13,9 +13,7 @@ export const useBooks = () => {
         setError(null);
 
         const response = await fetch("https://gutendex.com/books/?page=1");
-        console.log("response: ", response)
         if (!response.ok) {
-        //   throw new Error(`Error: ${response.status} - ${response.statusText}`);
             setError(`Error ${response.status} - ${response.statusText}`)
             setLoading(false);
             return;
